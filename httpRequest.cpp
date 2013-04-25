@@ -12,7 +12,7 @@ HttpRequest::HttpRequest(Socket* clientSocket)
 	httpVersion = new char[9];
 
 	/* 
-	* Første linje for å bestemme forespørselsmetoden, 
+	* Forste linje for å bestemme foresporselsmetoden, 
 	*  Uri og  HTTP standard version
 	* Denne linjen skal se slik ut: 
 	* RequestMethod URI Version 
