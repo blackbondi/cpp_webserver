@@ -1,0 +1,1 @@
+alert("Velkommen til vår HTTP Server!");

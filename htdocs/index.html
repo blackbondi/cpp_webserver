@@ -1,0 +1,64 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+       "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>Min HTTP Server</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js" type="text/javascript"></script>
+</head>
+<body>
+    <h1>Velkommen til vår HTTP Server</h1>
+    <h3> Denne nettsiden innholder et fint bilde, en CSS fil og en JavaScript fil</h3>
+
+    <a href="cool.htm" target="_self">trykk her for å se noe kult :)</a>
+
+    <img src="www.png" alt="Hi du!" />
+
+    <h2>Send POST request:</h2>
+    <form action="/" method="post">
+        <table border="0" cellpadding="5" cellspacing="0" bgcolor="#E0E0E0">
+            <tr>
+                <td align="right">Fornavn:</td>
+                <td>
+                    <input name="surname" type="text" size="30" maxlength="30"></td>
+            </tr>
+            <tr>
+                <td align="right">Etternavn:</td>
+                <td>
+                    <input name="firstName" type="text" size="30" maxlength="40"></td>
+            </tr>
+            <tr>
+                <td align="right"></td>
+                <td>
+                    <input type="submit">
+                    <input type="reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <h2>Send GET request:</h2>
+    <form action="/" method="get">
+        <table border="0" cellpadding="5" cellspacing="0" bgcolor="#E0E0E0">
+            <tr>
+                <td align="right">Fornavn:</td>
+                <td>
+                    <input name="surname" type="text" size="30" maxlength="30"></td>
+            </tr>
+            <tr>
+                <td align="right">Etternavn:</td>
+                <td>
+                    <input name="firstName" type="text" size="30" maxlength="40"></td>
+            </tr>
+            <tr>
+                <td align="right"></td>
+                <td>
+                    <input type="submit">
+                    <input type="reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>
