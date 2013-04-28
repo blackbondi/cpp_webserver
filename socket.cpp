@@ -21,7 +21,7 @@ int Socket::Initialize()
 
 	// initialiser Winsock
 #ifdef _WIN32
-	// den høyeste versjon av windows sockets spesifikasjon som blir brukt.
+	// den nyeste versjon av windows sockets spesifikasjoner som blir brukt.
 	WORD wVersionRequested; 
 	WSADATA wsaData; 
 	wVersionRequested = MAKEWORD(2, 2); 
@@ -74,12 +74,12 @@ int Socket::ReceiveLine()
 
 	memset(recvBuf, 0, DEFAULT_BUFLEN);
 
-	// sjekker ut socket for lesbarhet før hente dataene
+	// sjekker ut socket for lesbarhet foer hente dataene
 #ifdef _WIN32
 	FD_ZERO(&nfds);
 	FD_SET(_socket, &nfds);
 
-	// den maksimale tiden til å vente er satt på 1 minutt
+	// den maksimale tiden til aa vente er satt paa 1 minutt
 	timeout.tv_sec = 60;
 
 	// Første parameteren er ignorert
@@ -91,7 +91,7 @@ int Socket::ReceiveLine()
 	}
 	else if(retCode < 1)
 	{
-		// Enten kontakten ikke er klar eller tidfristen er utløpt
+		// Enten kontakten ikke er klar eller tidfristen er utloept
 		return -1;
 	}
 #endif

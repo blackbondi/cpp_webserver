@@ -20,7 +20,7 @@ private:
 	// IP address, og port.
 	struct sockaddr_in _socketAddr;
 
-	// bufferen som ble fått
+	// bufferen som ble faatt
 	char* recvBuf;
 
 public:
@@ -49,17 +49,17 @@ public:
 	Socket * Accept();
 
 	/*
-	* får dataer av bytes størelse fra remote host
+	* faar dataer av bytes stoerelse fra remote host
 	*/
 	int ReceiveLine();
 
 	/*
-	* sender dataer på socket
+	* sender dataer paa socket
 	*/
 	int Send(char* buf, int socket);
 
 	/*
-	* sender en tekst eller en binær fil
+	* sender en tekst eller en binaer fil
 	*/
 	int SendFile(char* fileName, int isBinary, int socket);
 
